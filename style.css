@@ -1,0 +1,83 @@
+/*
+|  Elements  | body             |   PESO 001 |
+|  Classe    | .estiloVitoriano |   PESO 010 |
+|  ID        | #div-01          |   PESO 100 |
+
+body .estiloVitoriano           = 011 pts
+body #div_01                    = 101 pts
+body #div_01 .estiloVitoriano   = 111 pts
+
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  /* background-image: url(./assets/bg-mobile.jpg);
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover; */
+
+  /* 
+  Shorthand - atalhos
+  image, repeat, position e /size.
+  */
+  background: url(./assets/bg-mobile.jpg) no-repeat top center / cover;
+}
+
+body * {
+  font-family: "Inter", sans-serif;
+  color: #fff;
+}
+
+#container {
+  width: 360px;
+  margin: 56px auto 0px auto;
+  /*  parâmetros margin
+          top   right/left    bottom
+  margin: 56px  auto          0px
+
+          top/bottom    right-left
+  margin: 56px          auto;
+  */
+}
+
+#profile {
+  text-align: center;
+  padding: 24px;
+}
+
+#profile img {
+  width: 112px;
+}
+
+#profile p {
+  font-weight: 500;
+  line-height: 24px;
+  padding-top: 8px;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+ul li a {
+  border: 1px solid white;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 16px 24px;
+
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 8px;
+  backdrop-filter: blur(4px);
+}
